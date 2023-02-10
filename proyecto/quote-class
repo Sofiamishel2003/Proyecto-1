@@ -1,0 +1,5 @@
+(defclass quote-class ()
+  ((expression :initarg :expression :reader quote-expression)))
+
+(defun evaluate-quote (obj)
+  (quote-expression obj))
