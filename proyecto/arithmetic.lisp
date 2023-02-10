@@ -1,0 +1,10 @@
+(defun arithmetic (operator num1 num2)
+  (cond ((eq operator '+) (+ num1 num2))
+        ((eq operator '-) (- num1 num2))
+        ((eq operator '*) (* num1 num2))
+        ((eq operator '/) (/ num1 num2))))
+
+(print (arithmetic '+ 2 3))
+(print (arithmetic '- 2 3))
+(print (arithmetic '* 2 3))
+(print (arithmetic '/ 6 3))
