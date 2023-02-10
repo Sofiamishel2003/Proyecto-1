@@ -1,7 +1,6 @@
-(defun factorial (n)
-  (if (= n 0)
-      1
-      (* n (factorial (- n 1))) ) )
+(defun factorial (n &optional (res 1))
+  (if (= n 1)
+      res
+      (factorial (1- n) (* n res))))
 
-(loop for i from 0 to 16
-   do (format t "~D! = ~D~%" i (factorial i)) )
+(print (factorial 7))
